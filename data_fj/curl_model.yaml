@@ -1,0 +1,2 @@
+post: "curl --location --request POST '0.0.0.0:8420/walkman/internal/api_fj{}' --header 'Content-Type:application/json' --data_fj-raw '{}'"
+get: "curl --location --request GET '0.0.0.0:8420/walkman/internal/api_fj{}'"

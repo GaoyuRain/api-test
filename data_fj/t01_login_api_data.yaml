@@ -1,0 +1,159 @@
+#登录注册更新资料
+user_verify_code:
+  url: "/user/verify_code"
+  comment: "获取验证码"
+  index: 1
+  type: 'get'
+  params:
+    zone: '+99'
+    phone: '19999999836'
+
+user_login:
+  url: "/user/login"
+  comment: "手机号注册/登陆"
+  index: 1
+  type: 'POST'
+  params:
+    zone: "+99"
+    phone: '19999999836'
+    verify_code: '0000'
+    #设备类型（1-ios 2-android）
+    device_type: 1
+
+user_login_wx:
+  url: "/user/login"
+  comment: "用户登陆信息"
+  index: 1
+  type: 'POST'
+  params:
+    # 微信 union_id
+    union_id: '11111'
+    phone: '19999999836'
+    verify_code: '0000'
+    #设备类型（1-ios 2-android）
+    device_type: 1
+
+user_tourist_login:
+  url: "/user/tourist_login"
+  comment: "游客登陆"
+  index: 1
+  type: 'POST'
+  params:
+    device_id: '123456789'
+    client_version: '202'
+    device_type: 1
+
+user_wx_login:
+  url: "/user/wx_login"
+  comment: "微信登陆"
+  index: 2
+  type: 'POST'
+  params:
+    access_token: '123456789'
+    open_id: '222202'
+    device_type: 1
+
+user_wx_bind:
+  url: "/user/wx_bind"
+  comment: "微信绑定手机号登陆"
+  index: 3
+  type: 'POST'
+  params:
+    access_token: '123456789'
+    open_id: '222202'
+    device_type: 1
+    phone: '19999999836'
+    verify_code: '0000'
+
+user_wx_mini_login:
+  url: "/user/wx/mini_login"
+  comment: "小程序登陆"
+  index: 4
+  type: 'POST'
+  params:
+    code: '0000'
+
+user_wx_mini_bind:
+  url: "/user/wx/mini_bind"
+  comment: "小程序绑定手机号登陆"
+  index: 5
+  type: 'POST'
+  params:
+    phone: '19999999836'
+    verify_code: '0000'
+    code: '0000'
+
+user_apple_login:
+  url: "/user/apple_login"
+  comment: "苹果账号登陆"
+  index: 6
+  type: 'POST'
+  params:
+    apple_id: '19999999836'
+    code: '0000'
+    token: '0000'
+    device_type: 1
+
+user_apple_bind:
+  url: "/user/apple_bind"
+  comment: "苹果账号绑定手机号登陆"
+  index: 7
+  type: 'POST'
+  params:
+    apple_id: '19999999836'
+    phone: '19999999836'
+    token: '0000'
+    device_type: 1
+    verify_code: '19999999836'
+    code: '0000'
+
+user_third_unbind:
+  url: "/user/third/unbind"
+  comment: "苹果/微信解除绑定"
+  index: 8
+  type: 'POST'
+  params:
+    key: '11111'
+    #解绑类型（1-微信 2-苹果）
+    type: 1
+
+user_update:
+  url: "/user/update"
+  comment: "更新用户信息/编辑资料"
+  index: 9
+  type: 'POST'
+  params:
+    avatar:
+    nickname:
+    gender:
+    birthday: '199990909'
+    key: 'test'
+
+user_update_phone:
+  url: "/user/update/phone"
+  comment: "修改绑定手机号"
+  index: 10
+  type: 'POST'
+  params:
+    phone: '19999999836'
+    verify_code: '0000'
+    key: 'test'
+
+user_update_wx:
+  url: "/user/update/wx"
+  comment: "修改绑定微信号"
+  index: 11
+  type: 'POST'
+  params:
+    access_token: '19999999836'
+    open_id: '0000'
+    key: 'test'
+
+user_update_apple:
+  url: "/user/update/apple"
+  comment: "修改绑定苹果账号"
+  index: 12
+  type: 'POST'
+  params:
+    code: '0000'
+    key: 'test'

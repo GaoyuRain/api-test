@@ -1,0 +1,48 @@
+#cv信息
+cv_info:
+  url: "/album/cv_info"
+  comment: "cv详细信息"
+  index: 1
+  type: 'GET'
+  params:
+    cv_id: 100009
+
+album_cv_list:
+  url: "/album/cv_list"
+  comment: "cv作品列表"
+  index: 2
+  type: 'GET'
+  params:
+    cv_id: 100009
+    page: 1
+    size: 20
+
+user_follow_cv:
+  url: "/user/follow_cv"
+  comment: "关注cv"
+  index: 3
+  type: 'POST'
+  params:
+    # 关注状态。1-关注，0-取消关注	是
+    cv_id: 100009
+    state: 1
+
+cv_attention:
+  url: "/cv/attention"
+  comment: "cv关注列表 "
+  index: 4
+  type: 'GET'
+  params:
+    cv_id: 100009
+    page: 1
+    size: 20
+
+cv_fans:
+  url: "/cv/fans"
+  comment: "cv粉丝列表"
+  index: 5
+  type: 'GET'
+  params:
+    cv_id: 100009
+    page: 1
+    size: 20

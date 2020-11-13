@@ -1,0 +1,91 @@
+# 专辑详情页面
+album_info:
+  url: '/album/album_info'
+  comment: '专辑简介'
+  index: 1
+  type: 'get'
+  params:
+    album_id: 100001
+
+actor_cv:
+  url: '/album/actor_cvs'
+  comment: '参演cv'
+  index: 2
+  type: 'get'
+  params:
+    album_id: 100001
+
+album_audio:
+  url: '/album/audio'
+  comment: '选集'
+  index: 3
+  type: 'get'
+  params:
+    album_id: 100001
+
+album_recommend:
+  url: '/album/recommend'
+  comment: '相关作品'
+  index: 4
+  type: 'get'
+  params:
+    album_id: 100001
+
+buy_album:
+  url: '/user/buy_album'
+  comment: '购买作品'
+  index: 5
+  type: 'post'
+  params:
+    album_id: 100001
+    price: 10
+
+follow_album:
+  url: '/user/follow_album'
+  comment: '追剧(收藏专辑)'
+  index: 6
+  type: 'post'
+  params:
+    album_id: 100001
+    #    关注状态。1-关注，0-取消关注
+    state: 1
+
+album_history:
+  url: '/album/history'
+  comment: '用户专辑播放记录'
+  index: 7
+  type: 'post'
+  params:
+    album_id: 100001
+    # 剧集id
+    audio_id: 100001
+
+album_list:
+  url: '/product/album/list'
+  comment: '可购买专辑'
+  index: 8
+  type: 'get'
+  params:
+    page: 1
+    size: 20
+
+reward_buy:
+  url: '/album/reward/buy'
+  comment: "专辑打赏"
+  index: 9
+  type: 'post'
+  params:
+    album_id: 100001
+    total_rice: 4
+    reward_id: 1
+    count: 4
+
+reward_rank:
+  url: '/album/reward/rank'
+  comment: "恰饭榜 "
+  index: 10
+  type: 'get'
+  params:
+    album_id: 100001
+    # 类型（1 月榜，2 总榜
+    rtype: 1

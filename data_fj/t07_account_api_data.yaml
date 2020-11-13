@@ -1,0 +1,54 @@
+# 钱包
+account_detail:
+  url: "/account/detail"
+  comment: "账户余额"
+  index: 1
+  type: 'GET'
+  params:
+
+account_rice_list:
+  url: "/account/rice/list"
+  comment: "充值列表"
+  index: 2
+  type: 'GET'
+  params:
+    page: 1
+    size: 20
+
+product_list:
+  url: "/product/list"
+  comment: "商品列表"
+  index: 3
+  type: 'GET'
+  params:
+
+pay_create_order:
+  url: "/pay/create/order"
+  comment: "创建订单（任何充值渠道都需要创建订单）"
+  index: 4
+  type: 'POST'
+  params:
+    # 商品 id
+    product_id: 1
+    # 商品类型（1-饭粒充值 2-购买专辑 3-活动饭粒充值）
+    product_type: 1
+    # 支付类型（1-苹果 2-支付宝 3-微信 4-小程序支付 5-h5 6-wx_pub）
+    pay_type: 2
+
+pay_apple_verify_receipt:
+  url: "/pay/apple/verify_receipt"
+  comment: "苹果支付成功验证"
+  index: 5
+  type: 'POST'
+  params:
+    #苹果支付凭证
+    receipt_data: '123'
+    # 饭角内部的订单号
+    order_id: '123'
+
+account_consume_list:
+  url: "/account/consume/list"
+  comment: "消费记录列表"
+  index: 6
+  type: 'GET'
+  params:

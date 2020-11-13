@@ -1,0 +1,117 @@
+#我的页面
+user_info:
+  url: "/user/info"
+  comment: "个人信息"
+  index: 1
+  type: 'get'
+  params:
+    # 查看其他user信息，查看自己信息该字段不传值
+    user_id: '1001355'
+
+user_attention_list:
+  url: "/user/attention"
+  comment: "用户关注列表"
+  index: 2
+  type: 'get'
+  params:
+    # 查看其他user信息，查看自己信息该字段不传值
+    user_id: '1001355'
+    page: 1
+    size: 20
+
+user_fans:
+  url: "/user/fans"
+  comment: "用户粉丝列表"
+  index: 3
+  type: 'get'
+  params:
+    # 查看其他user信息，查看自己信息该字段不传值
+    user_id: '1001355'
+    page: 1
+    size: 20
+
+user_my_flow:
+  url: "/user/my_follow"
+  comment: "我的追剧列表"
+  index: 4
+  type: 'get'
+  params:
+    page: 1
+    size: 20
+
+user_flow_albumlist:
+  url: "/user/follow/album_list"
+  comment: "用户追剧列表"
+  index: 5
+  type: 'get'
+  params:
+    #  被查看的用户ID
+    user_id: '88211'
+    page: 1
+    size: 20
+
+user_not_read:
+  url: "/user/not_read"
+  comment: "小铃铛（轮询接口）"
+  index: 6
+  type: 'get'
+  params:
+
+user_notice:
+  url: "/user/notice"
+  comment: "通知列表"
+  index: 7
+  type: 'get'
+  params:
+    page: 1
+    size: 20
+
+user_activity:
+  url: "/user/activity"
+  comment: "动态列表"
+  index: 8
+  type: 'get'
+  params:
+    page: 1
+    size: 20
+
+user_read_album:
+  url: "/user/read_album"
+  comment: "追剧更新已读"
+  index: 9
+  type: 'get'
+  params:
+    album_id: 100001
+
+user_purchase_list:
+  url: "/user/purchase_list"
+  comment: "已购列表"
+  index: 10
+  type: 'get'
+  params:
+    page: 1
+    size: 20
+
+#user_live_ticket:
+#  url: "/gift/user/live_ticket"
+#  comment: "直播中心-直播饭票数"
+#  index: 11
+#  type: 'get'
+#  params:
+
+follow_user:
+  url: "/user/follow_user"
+  comment: "关注/取消关注user"
+  index: 12
+  type: 'post'
+  params:
+    user_id: 88211
+    #关注状态。1-关注，0-取消关注
+    state: 1
+
+#user_permission:
+#  url: "/user/permission"
+#  comment: "用户权限"
+#  index: 13
+#  type: 'get'
+#  params:

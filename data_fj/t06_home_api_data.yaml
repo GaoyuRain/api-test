@@ -1,0 +1,70 @@
+# 首页&推荐
+search_guide:
+  url: "/search/guide"
+  comment: "引导词"
+  index: 1
+  type: 'GET'
+  params:
+
+search_keyword:
+  url: "/search/keyword"
+  comment: "搜索"
+  index: 2
+  type: 'GET'
+  params:
+    keyword: '1'
+
+recommend_banner:
+  url: "/recommend/banner"
+  comment: "banner栏"
+  index: 3
+  type: 'GET'
+  params:
+    # 1-小程序；2-app
+    platform: 2
+    #1-主页；2-直播中心；3-直播列表； 4-直播间轮播（2.0新增）
+    position: 1
+
+recommend_major:
+  url: "/recommend/major"
+  comment: "专辑主推荐"
+  index: 4
+  type: 'GET'
+  params:
+    # 推荐类型；1-为你推荐；2-人气月榜；3-精品周更；4-新剧速递
+    type: 1
+    page: 1
+    size: 20
+
+recommend_cv:
+  url: "/recommend/cv"
+  comment: "推荐cv"
+  index: 5
+  type: 'GET'
+  params:
+    page: 1
+    size: 20
+
+recommend_category:
+  url: "/recommend/category"
+  comment: "专辑分类推荐"
+  index: 6
+  type: 'GET'
+  params:
+    cate_id: 1
+    page: 1
+    size: 20
+
+album_category:
+  url: "/album/category"
+  comment: "分类列表"
+  index: 7
+  type: 'GET'
+  params:
+
+recommend_home:
+  url: "/recommend/home"
+  comment: "home集合页"
+  index: 8
+  type: 'GET'
+  params:
