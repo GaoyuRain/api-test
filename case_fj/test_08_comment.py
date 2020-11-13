@@ -56,5 +56,5 @@ class WebsiteUser(HttpUser):
 if __name__ == '__main__':
     file_name = os.path.basename(__file__)
     print(LocustConfig.locust_cmd(file_name))
-    subprocess.call(KILL_LOSUCT_CMD, shell=True)
+    # subprocess.call(KILL_LOSUCT_CMD, shell=True)
     subprocess.call(LocustConfig.locust_cmd(file_name, has_web=False), shell=True)
