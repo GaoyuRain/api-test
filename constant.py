@@ -63,21 +63,21 @@ hasLog = True
 
 """ 参数数据 """
 # 登录页面
-login_api_data = get_yaml_data('t01_login_api_data.yaml')
-# 直播页面
-# live_data = None
-# 我的页面
-my_api_data = get_yaml_data('t03_my_api_data.yaml')
-# cv信息页面
-cv_info_api_data = get_yaml_data('t04_cv_info_api_data.yaml')
-# 剧集详情页面
-album_info_api_data = get_yaml_data('t05_album_info_api_data.yaml')
-# 首页页面
-home_api_data = get_yaml_data('t06_home_api_data.yaml')
-# 钱包页面
-account_api_data = get_yaml_data('t07_account_api_data.yaml')
-# 评论页面
-comment_api_data = get_yaml_data('t08_comment_api_data.yaml')
+# login_api_data = get_yaml_data('t01_login_api_data.yaml')
+# # 直播页面
+# # live_data = None
+# # 我的页面
+# my_api_data = get_yaml_data('t03_my_api_data.yaml')
+# # cv信息页面
+# cv_info_api_data = get_yaml_data('t04_cv_info_api_data.yaml')
+# # 剧集详情页面
+# album_info_api_data = get_yaml_data('t05_album_info_api_data.yaml')
+# # 首页页面
+# home_api_data = get_yaml_data('t06_home_api_data.yaml')
+# # 钱包页面
+# account_api_data = get_yaml_data('t07_account_api_data.yaml')
+# # 评论页面
+# comment_api_data = get_yaml_data('t08_comment_api_data.yaml')
 
 # constant.login_api_data = DataUtils.get_yaml_data('t01_login_api_data.yaml')
 # constant.my_api_data = DataUtils.get_yaml_data('t03_my_api_data.yaml')
