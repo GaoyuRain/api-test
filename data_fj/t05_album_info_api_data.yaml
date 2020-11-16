@@ -5,7 +5,13 @@ album_info:
   index: 1
   type: 'get'
   params:
-    album_id: 100001
+    - album_id: 100001
+    - album_id: 100001
+    - album_id: 100001
+    - album_id: 100001
+    - album_id: 100001
+    - album_id: 100001
+    - album_id: 100001
 
 actor_cv:
   url: '/album/actor_cvs'
