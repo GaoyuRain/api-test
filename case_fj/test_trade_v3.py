@@ -9,7 +9,7 @@ from constant import UAT_BASE_URL, HEADER6, TEST_BASE_URL, HEADER1
 from utils_fj.log_utils import LogUtils
 
 
-class TestXmly(TaskSet):
+class TestTrade(TaskSet):
 
     @task
     def get_placeOrder(self):
@@ -24,7 +24,7 @@ class TestXmly(TaskSet):
                       "tradeType": 1,
                       "timestamp": "1604910786647"}
         response = self.client.post(url_placeOrder, data=placeOrder, headers=HEADER6, verify=False)
-        LogUtils.print_response(response, '支付接口')
+        LogUtils.print_response(response, 'UAT下单并直接支付接口')
 
 
 
@@ -33,7 +33,7 @@ class TestXmly(TaskSet):
 class WebsiteUser(HttpUser):
     host = UAT_BASE_URL
     wait_time = between(5, 10)
-    tasks = [TestXmly]
+    tasks = [TestTrade]
 
 
 if __name__ == '__main__':
