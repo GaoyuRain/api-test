@@ -33,8 +33,12 @@ def get_yaml_data(file_name):
 
 
 # 测试环境 pro  pre test
-envir = 'pro'
+HEADER6 = {'User-Agent': 'ting_6.6.93(EML-TL00,Android29)', 'Content-type': 'application/x-www-form-urlencoded',
+           'Cookie': '6&_device=android&9071d20d-effe-3a28-a144-450dfdde0f77&6.6.99;6&_token=11238014&ED5FE8B0140C41A8D477DC3739FCAEC3E31860E4AD4F483610E2E70F3B1AADF5682449312EA0245M7de15d7C493900A_;'}
 
+
+envir = 'pro'
+UAT_BASE_URL="https://m.uat.ximalaya.com"
 BASE_URL = get_host(envir)
 # 用户信息
 user_info = None
