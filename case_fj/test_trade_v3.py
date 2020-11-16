@@ -4,8 +4,9 @@ import subprocess
 
 from locust import TaskSet, between, task, HttpUser
 
-from base_fj.locust_config import LocustConfig
+# from base_fj.locust_config import LocustConfig
 from constant import UAT_BASE_URL, HEADER6, TEST_BASE_URL, HEADER1
+from utils_fj.locust_utils import LocustUtils
 from utils_fj.log_utils import LogUtils
 
 
@@ -38,6 +39,4 @@ class WebsiteUser(HttpUser):
 
 if __name__ == '__main__':
     file_name = os.path.basename(__file__)
-    print(LocustConfig.locust_cmd(file_name))
-    # subprocess.call(KILL_LOSUCT_CMD, shell=True)
-    subprocess.call(LocustConfig.locust_cmd(file_name, has_web=True), shell=True)
+    LocustUtils.start_locust(file_name, has_web=True)
