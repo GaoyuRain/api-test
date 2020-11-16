@@ -4,13 +4,12 @@ Date : 2020/07/20
 Description :
 """
 import os
-import subprocess
 
 # from api_fj.live_api import LiveApi
 from locust import TaskSet, between, task, HttpUser
 
 import constant
-from base_fj.locust_config import LocustConfig, KILL_LOSUCT_CMD
+from utils_fj.locust_utils import LocustUtils
 
 
 class TestLive(TaskSet):
@@ -42,6 +41,4 @@ class WebsiteUser(HttpUser):
 
 if __name__ == '__main__':
     file_name = os.path.basename(__file__)
-    print(LocustConfig.locust_cmd(file_name))
-    # subprocess.call(KILL_LOSUCT_CMD, shell=True)
-    subprocess.call(LocustConfig.locust_cmd(file_name), shell=True)
+    LocustUtils.start_locust(file_name)

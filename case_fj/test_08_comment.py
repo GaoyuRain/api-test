@@ -4,13 +4,12 @@ Date : 2020/10/28
 Description :
 """
 import os
-import subprocess
 
 from locust import between, TaskSet, task, HttpUser
 
 import constant
-from base_fj.locust_config import LocustConfig, KILL_LOSUCT_CMD
 from utils_fj.api_utils import APIUtils
+from utils_fj.locust_utils import LocustUtils
 
 
 class TestComment(TaskSet):
@@ -55,6 +54,4 @@ class WebsiteUser(HttpUser):
 
 if __name__ == '__main__':
     file_name = os.path.basename(__file__)
-    print(LocustConfig.locust_cmd(file_name))
-    # subprocess.call(KILL_LOSUCT_CMD, shell=True)
-    subprocess.call(LocustConfig.locust_cmd(file_name, has_web=False), shell=True)
+    LocustUtils.start_locust(file_name)
