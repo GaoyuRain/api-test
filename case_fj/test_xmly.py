@@ -1,2 +1,0 @@
-class TestXmly:
-    pass
