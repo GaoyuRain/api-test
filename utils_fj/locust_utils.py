@@ -32,9 +32,7 @@ class LocustUtils:
         if is_stop_done:
             l_cmd += STOP_CMD
         # 执行命令
-        print('startloucst')
-        print(l_cmd)
-        # subprocess.call(l_cmd, shell=True)
+        subprocess.call(l_cmd, shell=True)
 
     @staticmethod
     def __start_worker_thread(file_name):
