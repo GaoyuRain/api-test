@@ -7,19 +7,16 @@ from locust import TaskSet, between, task, HttpUser
 import constant
 from base_fj.locust_config import LocustConfig, KILL_LOSUCT_CMD
 from utils_fj.api_utils import APIUtils
+from utils_fj.log_utils import LogUtils
 
 
 class TestXmly(TaskSet):
 
-    # @task(1)
-    # def test_02_account_rice_list(self):
-    #     APIUtils.send_pre_req(self.client, self.params_data.get('account_rice_list'))
-
     @task(1)
     def test_placeOrder(self):
+        url_placeOrder = "/trade-v3/placeorderandmakepayment"
         payMethods = [{"payMode": "BALANCE", "accountType": "XICOIN", "subAccount": "IOS"}]
         context = {}
-
         placeOrder = {"domain": 1,
                       "context": context,
                       "returnUrl": "http://www.ximalaya.com",
@@ -29,8 +26,8 @@ class TestXmly(TaskSet):
                       "tradeType": 1,
                       "timestamp": "1604910786647"
                       }
-        print(placeOrder)
-        response = requests.post(self.client,data=placeOrder, headers=constant.HEADER6)
+        response = self.client.post(constant.UAT_BASE_URL+url_placeOrder, data=placeOrder, headers=constant.HEADER6)
+        LogUtils.print_response(response, "下单并直接支付")
 
 
 class WebsiteUser(HttpUser):
@@ -42,5 +39,4 @@ class WebsiteUser(HttpUser):
 if __name__ == '__main__':
     file_name = os.path.basename(__file__)
     print(LocustConfig.locust_cmd(file_name))
-    # subprocess.call(KILL_LOSUCT_CMD, shell=True)
     subprocess.call(LocustConfig.locust_cmd(file_name, has_web=True), shell=True)
