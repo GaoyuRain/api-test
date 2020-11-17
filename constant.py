@@ -12,6 +12,20 @@ import os
 import yaml
 
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+TEST_BASE_URL = "https://m.test.ximalaya.com"
+UAT_BASE_URL = "https://m.uat.ximalaya.com"
+
+# Uat
+# android
+HEADER6 = {'User-Agent': 'ting_6.6.93(EML-TL00,Android29)', 'Content-type': 'application/x-www-form-urlencoded',
+           'Cookie': '6&_device=android&9071d20d-effe-3a28-a144-450dfdde0f77&6.6.99;6&_token=11238014&ED5FE8B0140C41A8D477DC3739FCAEC3E31860E4AD4F483610E2E70F3B1AADF5682449312EA0245M7de15d7C493900A_;'}
+
+
+
+# test
+# android cookie
+HEADER1 = {'User-Agent': 'ting_6.6.93(EML-TL00,Android29)', 'Content-type': 'application/x-www-form-urlencoded',
+           'Cookie': '4&_token=322709&E410EA20140CFDCF2C22B36A55C3A0C0FB4A96995895C3FF22FB7136D75B639B1A4AD2412B99191M9933558CC8A36B7_;4&_device=android&9071d20d-effe-3a28-a144-450dfdde0f77&6.6.93'}
 
 
 def get_host(type):

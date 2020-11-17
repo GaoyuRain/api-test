@@ -19,11 +19,11 @@ LOCUST_U = 20
 # 每秒启动几个用户
 LOCUST_R = 2
 # 执行时间 单位： h m s
-RUN_TIME = '30s'
+RUN_TIME = '10s'
 # 是否到时后执行完成在停止允许
 IS_STOP_DONE = True
 # 到时后执行完成后在停止命令
-STOP_CMD = '--stop-timeout 20'
+STOP_CMD = ' --stop-timeout 20'
 
 # 多进程启动locust
 # 主进程 命令
