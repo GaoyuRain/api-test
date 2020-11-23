@@ -20,7 +20,6 @@ class LocustUtils:
         :param is_master_mode: 是否多进程模式
         :param has_web: 是否需要web界面
         :param is_stop_done: 是否到时后执行完成在停止运行
-        :return: 启动命令
         '''
         if is_master_mode:
             LocustUtils.__start_worker_thread(file_name)
