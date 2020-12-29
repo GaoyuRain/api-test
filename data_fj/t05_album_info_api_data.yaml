@@ -5,13 +5,7 @@ album_info:
   index: 1
   type: 'get'
   params:
-    - album_id: 100001
-    - album_id: 100001
-    - album_id: 100001
-    - album_id: 100001
-    - album_id: 100001
-    - album_id: 100001
-    - album_id: 100001
+    album_id: 100001
 
 actor_cv:
   url: '/album/actor_cvs'
@@ -19,7 +13,7 @@ actor_cv:
   index: 2
   type: 'get'
   params:
-    album_id: 100001
+    album_id: 100025
 
 album_audio:
   url: '/album/audio'
@@ -92,6 +86,6 @@ reward_rank:
   index: 10
   type: 'get'
   params:
-    album_id: 100001
+    album_id: 100025
     # 类型（1 月榜，2 总榜
     rtype: 1

@@ -109,9 +109,9 @@ follow_user:
     #关注状态。1-关注，0-取消关注
     state: 1
 
-#user_permission:
-#  url: "/user/permission"
-#  comment: "用户权限"
-#  index: 13
-#  type: 'get'
-#  params:
+user_permission:
+  url: "/user/permission"
+  comment: "用户权限"
+  index: 13
+  type: 'get'
+  params:

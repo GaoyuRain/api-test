@@ -9,7 +9,6 @@ import hashlib
 import json
 from ast import literal_eval
 
-from utils_fj.data_utils import DataUtils
 
 # NewSalt = {"get": "MAaFS5Zc6ZIEapnmhurNyLLFwf3xWm", "post": "879f30c4b1641142c6192acc23cfb733"}
 

@@ -6,7 +6,7 @@ user_verify_code:
   type: 'get'
   params:
     zone: '+99'
-    phone: '19999999836'
+    phone: '19999999835'
 
 user_login:
   url: "/user/login"
@@ -15,7 +15,7 @@ user_login:
   type: 'POST'
   params:
     zone: "+99"
-    phone: '19999999836'
+    phone: '19999999835'
     verify_code: '0000'
     #设备类型（1-ios 2-android）
     device_type: 1
@@ -124,10 +124,9 @@ user_update:
   type: 'POST'
   params:
     avatar:
-    nickname:
+    nickname: '测试836'
     gender:
-    birthday: '199990909'
-    key: 'test'
+    birthday: '1996-09-09'
 
 user_update_phone:
   url: "/user/update/phone"
@@ -137,7 +136,6 @@ user_update_phone:
   params:
     phone: '19999999836'
     verify_code: '0000'
-    key: 'test'
 
 user_update_wx:
   url: "/user/update/wx"
@@ -147,7 +145,6 @@ user_update_wx:
   params:
     access_token: '19999999836'
     open_id: '0000'
-    key: 'test'
 
 user_update_apple:
   url: "/user/update/apple"
@@ -156,4 +153,3 @@ user_update_apple:
   type: 'POST'
   params:
     code: '0000'
-    key: 'test'

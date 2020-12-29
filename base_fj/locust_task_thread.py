@@ -1,7 +1,7 @@
 """
 author :rain
 Date : 2020/11/16
-Description :
+Description : 启动 locust进程的线程
 """
 import subprocess
 from threading import Thread

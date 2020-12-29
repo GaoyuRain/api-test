@@ -1,0 +1,141 @@
+gift_list:
+  url: "/gift/list"
+  comment: "礼物列表"
+  index: 1
+  type: 'get'
+  params:
+
+
+live_open_time:
+  url: "/live/open_time"
+  comment: "直播开启时间"
+  index: 2
+  type: 'GET'
+  params:
+
+live_open_remind:
+  url: "/live/open_remind"
+  comment: "直播营业提醒"
+  index: 3
+  type: 'POST'
+  params:
+    status: 1
+
+live_background_add:
+  url: "/live/background/add"
+  comment: "上传背景图"
+  index: 4
+  type: 'POST'
+  params:
+    image: 'http://fanjiao-media.fanjiao.cn/avatar/1000151/c31c03002eaabcc621f763fcd49e8c65.jpg'
+
+
+live_background_del:
+  url: "/live/background/del"
+  comment: "删除背景图"
+  index: 5
+  type: 'POST'
+  params:
+    image: 'http://fanjiao-media.fanjiao.cn/avatar/1000151/c31c03002eaabcc621f763fcd49e8c65.jpg'
+
+live_backend:
+  url: "/live/backend"
+  comment: "直播后台配置"
+  index: 6
+  type: 'GET'
+  params:
+
+live_audience_list:
+  url: "/live/audience_list"
+  comment: "直播间在线观众列表"
+  index: 7
+  type: 'GET'
+  params:
+    room_id: '10001'
+    count: 100
+
+live_audio_list:
+  url: "/live/audio_list"
+  comment: "背景音乐列表"
+  index: 8
+  type: 'GET'
+  params:
+
+live_info:
+  url: "/live/info"
+  comment: "直播详情"
+  index: 9
+  type: 'GET'
+  params:
+    room_id: '10001'
+
+live_list:
+  url: "/live/list"
+  comment: "直播列表"
+  index: 10
+  type: 'GET'
+  params:
+    live_type: 1
+    page: 1
+    size: 20
+
+live_update:
+  url: "/live/update"
+  comment: "更新直播间公告"
+  index: 11
+  type: 'POST'
+  params:
+    announcement: '更新直播间公告'
+
+gift_current_ranking:
+  url: "/gift/current_ranking"
+  comment: "主播场次守护榜"
+  index: 12
+  type: 'GET'
+  params:
+    owner_uid: 1000297
+
+gift_info:
+  url: "/gift/info"
+  comment: "礼物信息 内部接口"
+  index: 13
+  type: 'GET'
+  params:
+    gift_id: 1
+
+gift_top_ranking:
+  url: "/gift/top_ranking"
+  comment: "主播守护总榜"
+  index: 14
+  type: 'GET'
+  params:
+    owner_uid: 1000297
+
+gift_user_live_ticket:
+  url: "/gift/user/live_ticket"
+  comment: "个人主页-用户直播饭票信息"
+  index: 15
+  type: 'GET'
+  params:
+
+gift_user_ranking:
+  url: "/gift/user/ranking"
+  comment: "用户排名"
+  index: 16
+  type: 'GET'
+  params:
+    owner_uid: 1000297
+
+
+#live_join:
+#  url: "/live/join"
+#  comment: "加入直播间"
+#  index: 17
+#  type: 'GET'
+#  params:
+#    room_id: 'fanjiao-1000089'
+
+
+
+
+

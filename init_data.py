@@ -38,15 +38,9 @@ def crest_data():
         avatar = data.get('user').get('avatar')
         uinfo = {'token': login_token, 'uid': uid, 'nickname': nickname, 'avatar': avatar}
         uinfo_list.append(uinfo)
-    DataUtils.set_data(uinfo_list, constant.user_info_file)
+    DataUtils.set_data(uinfo_list, constant.uinfo_api_pressure_file)
     print(uinfo_list)
-
-
-def get_user():
-    for i in range(5):
-        print(DataUtils.get_user_info())
 
 
 if __name__ == '__main__':
     crest_data()
-    get_user()
