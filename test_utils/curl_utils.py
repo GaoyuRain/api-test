@@ -9,7 +9,7 @@ import requests
 
 # 工程根目录
 # BASE_DIR = os.path.abspath(os.path.dirname(__file__))
-from utils_fj.data_utils import DataUtils
+from test_utils.data_utils import DataUtils
 
 
 class CurlDataUtils:

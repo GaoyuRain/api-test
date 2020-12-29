@@ -8,8 +8,8 @@ import os
 from locust import TaskSet, between, task, HttpUser
 
 import constant
-from utils_fj.api_utils import APIUtils
-from utils_fj.locust_utils import LocustUtils
+from test_utils.api_utils import APIUtils
+from test_utils.locust_utils import LocustUtils
 
 
 class TestLogin(TaskSet):

@@ -8,8 +8,8 @@ import unittest
 import allure
 
 import constant
-from utils_fj.api_utils import APIUtils
-from utils_fj.data_utils import DataUtils
+from test_utils.api_utils import APIUtils
+from test_utils.data_utils import DataUtils
 
 
 class TestLogin(unittest.TestCase):

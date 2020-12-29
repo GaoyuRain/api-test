@@ -5,8 +5,8 @@ Description :文件操作
 """
 import os
 
-from utils_fj.data_utils import DataUtils
-from utils_fj.thread_utils import DownLoadThread
+from test_utils.data_utils import DataUtils
+from test_utils.thread_utils import DownLoadThread
 from constant import BASE_DIR
 
 

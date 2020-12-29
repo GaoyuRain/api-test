@@ -6,7 +6,7 @@ Description : 启动 locust进程的线程
 import subprocess
 from threading import Thread
 
-from base_fj.locust_config import START_LOCUST_CMD_MASTER, START_LOCUST_CMD_WORKER
+from base.locust_config import START_LOCUST_CMD_MASTER, START_LOCUST_CMD_WORKER
 
 
 class TaskThread(Thread):

@@ -6,9 +6,9 @@ Description :
 import requests
 
 import constant
-from base_fj.fanjiao_config import FanjiaoConfig
-from utils_fj.data_utils import DataUtils
-from utils_fj.log_utils import LogUtils
+from base.fanjiao_config import FanjiaoConfig
+from test_utils.data_utils import DataUtils
+from test_utils.log_utils import LogUtils
 
 
 class APIUtils:

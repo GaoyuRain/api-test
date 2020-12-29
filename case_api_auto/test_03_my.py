@@ -5,8 +5,8 @@ Description :我的页面
 """
 import unittest
 
-from utils_fj.api_utils import APIUtils
-from utils_fj.data_utils import DataUtils
+from test_utils.api_utils import APIUtils
+from test_utils.data_utils import DataUtils
 
 
 class TestMy(unittest.TestCase):

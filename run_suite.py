@@ -9,7 +9,7 @@ import unittest
 
 from constant import BASE_DIR
 from tools_fj.HTMLTestRunnerCN import HTMLTestReportCN
-from utils_fj.file_utils import FileUtils
+from test_utils.file_utils import FileUtils
 
 
 # 配置要测试的脚本

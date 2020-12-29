@@ -7,10 +7,10 @@ Description : 初始化测试数据
 import requests
 
 import constant
-from base_fj.fanjiao_config import FanjiaoConfig
+from base.fanjiao_config import FanjiaoConfig
 from constant import BASE_URL
-from utils_fj.data_utils import DataUtils
-from utils_fj.log_utils import LogUtils
+from test_utils.data_utils import DataUtils
+from test_utils.log_utils import LogUtils
 
 
 def user_login(phone):

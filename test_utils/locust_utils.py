@@ -5,8 +5,8 @@ Description :
 """
 import subprocess
 
-from base_fj.locust_config import STAR_LOSCUT_WEB, STAR_LOSCUT_NO_WEB, STOP_CMD, LOCUST_U, LOCUST_R, RUN_TIME, LOCUST_P
-from base_fj.locust_task_thread import TaskThread
+from base.locust_config import STAR_LOSCUT_WEB, STAR_LOSCUT_NO_WEB, STOP_CMD, LOCUST_U, LOCUST_R, RUN_TIME, LOCUST_P
+from base.locust_task_thread import TaskThread
 
 
 class LocustUtils:

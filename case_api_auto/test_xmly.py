@@ -4,9 +4,9 @@ import subprocess
 
 from locust import TaskSet, between, task, HttpUser
 
-from base_fj.locust_config import LocustConfig
+from base.locust_config import LocustConfig
 from constant import UAT_BASE_URL, HEADER6, TEST_BASE_URL, HEADER1
-from utils_fj.log_utils import LogUtils
+from test_utils.log_utils import LogUtils
 
 
 class TestXmly(TaskSet):
