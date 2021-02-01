@@ -24,7 +24,7 @@ def get_host(type):
 
 def get_yaml_data(file_name):
     print(file_name)
-    file_path = BASE_DIR + os.sep + 'data_fj' + os.sep + file_name
+    file_path = BASE_DIR + os.sep + 'test_data' + os.sep + file_name
     # print(file_path)
     with open(file_path, 'r') as f:
         return yaml.safe_load(f)
