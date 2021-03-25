@@ -21,6 +21,7 @@ class LogUtils:
             print(f'URL: {r.url}')
             if isformart:
                 print(f'RESULT: {json.dumps(r.json(), ensure_ascii=False, sort_keys=True, indent=2)}')
+                # print(f'RESULT: {json.dumps(r.json(), ensure_ascii=False, sort_keys=True, indent=2)}')
             else:
                 print(f'RESULT: {json.dumps(r.json(), ensure_ascii=False)}')
             print('-' * 100)
