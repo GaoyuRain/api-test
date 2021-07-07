@@ -10,7 +10,6 @@ from base.fanjiao_config import FanjiaoConfig
 from test_utils.data_utils import DataUtils
 from test_utils.log_utils import LogUtils
 
-
 class APIUtils:
 
     @staticmethod
