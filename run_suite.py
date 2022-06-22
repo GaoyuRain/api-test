@@ -8,7 +8,7 @@ import time
 import unittest
 
 from constant import BASE_DIR
-from tools_fj.HTMLTestRunnerCN import HTMLTestReportCN
+from test_utils.HTMLTestRunnerCN import HTMLTestReportCN
 from test_utils.file_utils import FileUtils
 
 
